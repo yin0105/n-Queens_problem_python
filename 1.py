@@ -17,13 +17,6 @@ diffDiag = constraint("diffDiag", Ne(abs(x1-x2), diff))
 
 
 class NQueensCSP:
-    """CSP representation of the N-queens problem.
-    
-    Parameters:
-    N: Integer
-        The side length of a square chess board to use for the problem, and
-        the number of queens that must be placed on the board
-    """
     def __init__(self, N):
         # Declare symbolic variables in the CSP constructor"
         _vars = symbols("col:" + str(N))
